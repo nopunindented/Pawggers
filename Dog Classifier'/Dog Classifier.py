@@ -10,34 +10,94 @@ class Dog:
 
 
  def puppies(self):
-  if self.age == 'puppies':
-   if self.breed== 'toy':
-    if self.activity == 'not-active':
-     return #food
-    if self.activity == 'medium-activity':
-     return #food
-    if self.activity == 'active':
-     return #food
-   elif self.breed == 'small':
-    if self.activity == 'not-active':
-     return #food
-    if self.activity == 'medium-activity':
-     return #food
-    if self.activity == 'active':
-     return #food
-   elif self.breed == 'medium':
-    if self.activity == 'not-active':
-     return #food
-    if self.activity == 'medium-activity':
-        return #food
-    if self.activity == 'active':
-        return #food
-   elif self.breed == 'large':
-    if self.activity == 'not-active':
-        return #food
-    if self.activity == 'medium-activity':
-        return #food
-    if self.activity == 'active':
-        return #food
-  else: return None  
-     
+    if self.age == 'puppies':
+        if self.breed== 'toy':
+            if self.activity == 'not-active':
+                return #food
+            if self.activity == 'medium-activity':
+                return #food
+            if self.activity == 'active':
+                return #food
+        if self.breed == 'small':
+            if self.activity == 'not-active':
+                return #food
+            if self.activity == 'medium-activity':
+                return #food
+            if self.activity == 'active':
+                return #food
+        if self.breed == 'medium':
+            if self.activity == 'not-active':
+                return #food
+            if self.activity == 'medium-activity':
+                return #food
+            if self.activity == 'active':
+                return #food
+        if self.breed == 'large':
+            if self.activity == 'not-active':
+                return #food
+            if self.activity == 'medium-activity':
+                return #food
+            if self.activity == 'active':
+                return #food
+
+ def adult(self):
+    if self.age == 'adult':
+        if self.breed== 'toy':
+            if self.activity == 'not-active':
+                return #food
+            if self.activity == 'medium-activity':
+                return #food
+            if self.activity == 'active':
+                return #food
+        if self.breed == 'small':
+            if self.activity == 'not-active':
+                return #food
+            if self.activity == 'medium-activity':
+                return #food
+            if self.activity == 'active':
+                return #food
+        if self.breed == 'medium':
+            if self.activity == 'not-active':
+                return #food
+            if self.activity == 'medium-activity':
+                return #food
+            if self.activity == 'active':
+                return #food
+        if self.breed == 'large':
+            if self.activity == 'not-active':
+                return #food
+            if self.activity == 'medium-activity':
+                return #food
+            if self.activity == 'active':
+                return #food
+
+ def senior(self):
+    if self.age == 'senior':
+        if self.breed== 'toy':
+            if self.activity == 'not-active':
+                return #food
+            if self.activity == 'medium-activity':
+                return #food
+            if self.activity == 'active':
+                return #food
+        if self.breed == 'small':
+            if self.activity == 'not-active':
+                return #food
+            if self.activity == 'medium-activity':
+                return #food
+            if self.activity == 'active':
+                return #food
+        if self.breed == 'medium':
+            if self.activity == 'not-active':
+                return #food
+            if self.activity == 'medium-activity':
+                return #food
+            if self.activity == 'active':
+                return #food
+        if self.breed == 'large':
+            if self.activity == 'not-active':
+                return #food
+            if self.activity == 'medium-activity':
+                return #food
+            if self.activity == 'active':
+                return #food
