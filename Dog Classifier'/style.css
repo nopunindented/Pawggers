@@ -235,3 +235,16 @@ nav {
   font-size: 70%;
   justify-content: flex-end;
 }
+
+.button-group {
+  display: inline-flex;
+  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);;
+  border-radius: 12px;
+  border: 1px solid black; 
+  cursor: pointer; 
+
+}
+
+.button-group button:hover {
+  background-color: rgb(255, 255, 255);
+}
