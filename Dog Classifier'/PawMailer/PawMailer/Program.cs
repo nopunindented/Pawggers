@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
 
-namespace Spambot
+namespace PawMailer
 {
  class Program{
   static void Main(string[] args){
