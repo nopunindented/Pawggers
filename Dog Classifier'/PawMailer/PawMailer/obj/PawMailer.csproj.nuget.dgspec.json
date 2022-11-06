@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ohmpanchal/HackED Beta/PawMailer/PawMailer/PawMailer.csproj": {}
+    "/Users/ohmpanchal/HackED Beta/Pawggers/Dog Classifier'/PawMailer/PawMailer/PawMailer.csproj": {}
   },
   "projects": {
-    "/Users/ohmpanchal/HackED Beta/PawMailer/PawMailer/PawMailer.csproj": {
+    "/Users/ohmpanchal/HackED Beta/Pawggers/Dog Classifier'/PawMailer/PawMailer/PawMailer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ohmpanchal/HackED Beta/PawMailer/PawMailer/PawMailer.csproj",
+        "projectUniqueName": "/Users/ohmpanchal/HackED Beta/Pawggers/Dog Classifier'/PawMailer/PawMailer/PawMailer.csproj",
         "projectName": "PawMailer",
-        "projectPath": "/Users/ohmpanchal/HackED Beta/PawMailer/PawMailer/PawMailer.csproj",
+        "projectPath": "/Users/ohmpanchal/HackED Beta/Pawggers/Dog Classifier'/PawMailer/PawMailer/PawMailer.csproj",
         "packagesPath": "/Users/ohmpanchal/.nuget/packages/",
-        "outputPath": "/Users/ohmpanchal/HackED Beta/PawMailer/PawMailer/obj/",
+        "outputPath": "/Users/ohmpanchal/HackED Beta/Pawggers/Dog Classifier'/PawMailer/PawMailer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ohmpanchal/.nuget/NuGet/NuGet.Config"

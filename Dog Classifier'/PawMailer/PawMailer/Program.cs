@@ -5,11 +5,15 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Spambot{
-    class Program{
-        static void Main(string[] args) {
-            string whom = string.Join("",File.ReadAllLines("who.txt"));
-            using (SmtpClient client = new SmtpClient("smtp.gmail.com", 587)){
+namespace Spambot
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string whom = string.Join("", File.ReadAllLines("who.txt"));
+            using (SmtpClient client = new SmtpClient("smtp.gmail.com", 587))
+            {
                 client.EnableSsl = true;
                 client.DeliveryMethod = SmtpDeliveryMethod.Network;
                 client.UseDefaultCredentials = false;
