@@ -18,11 +18,9 @@ namespace PawMailer
    IDictionary<string, string[]> Users_and_times = new Dictionary<string, string[]>();
    using (SmtpClient client = new SmtpClient("smtp.gmail.com", 587)){
     while (true){
+     if (Users_and_times.ContainsKey(whom)){ 
      when = File.ReadAllLines("when.txt");
-     time = DateTime.Now.ToString("HH:mm:ss tt");
-     body_text = string.Join("\r\n", File.ReadAllLines("food.txt"));
-     whom = string.Join("", File.ReadAllLines("who.txt"));
-     if (Users_and_times.ContainsKey(whom)){
+     time = DateTime.Now.ToString("HH:mm:ss tt"); 
       Users_and_times[whom] = when;
      }else{
       Users_and_times.Add(whom, when);
