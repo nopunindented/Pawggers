@@ -1,39 +1,41 @@
 body{
-    z-index:1;
-    background: linear-gradient(-45deg, rgba(205, 5, 155, 0.518), rgb(129, 15, 195), rgb(37, 131, 168), rgb(9, 186, 77));
-    background-size: 400% 400%;
-    width: 100%;
-    height: 100vh;
-    color:rgb(0, 0, 0);
-    width: 100%;
-    animation: animate 5s ease infinite;
-    overflow: hidden;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 nav {
     width: 100%;
     height: 100px;
 }
 
-ul {
-    margin-left: 2rem; /* spaces out the nav bar "buttons"*/
-    letter-spacing: 2px;
-}
-
-ul li {
+.untubuntu{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif; 
     list-style: none;
     display: inline-block;
-    margin-left: 2rem; /* spaces out the nav bar "buttons"*/
+    margin-left: 2rem; 
     letter-spacing: 2px;
-}
-
-ul a {
-    text-decoration: none;
-    color: black;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;    
+    width:fit-content;
+    height: auto; 
+     
 }
 
 .wrap{
@@ -64,3 +66,20 @@ ul a {
     from, to { border-color: transparent }
     50% { border-color: black; }
   }
+
+#rectangle{
+    align-content: center;
+    width:500px;
+    height:300px;
+    background: white;
+    position:absolute;
+    top: 80%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+
+#buttonn{
+    left: 10px;
+    position:absolute;
+    transform:translateX(10);
+}
