@@ -22,3 +22,38 @@
             </nav>
         </div>
     </header-->
+    <div class="mainframe">
+        <form class="subframe" id="userlogin">
+            <h1 class="title">User Login</h1>
+            <div class="errormessage errormessage--error"></div>
+            <div class="inputgroup">
+                <input type="text" class="incoming" autofocus placeholder="Email">
+                <div class="inError"></div>
+            </div> 
+            <div class="inputgroup">
+                <input type="password" class="incoming" autofocus placeholder="Password">
+                <div class="inError"></div>
+            </div>
+            <button class="loginbutton" type="submit">Login</button>
+            <a id="linkCreateAcc" class="newAcc">Create New Account</a>
+        </form>
+    
+        <form class="subframe subframe--hidden" id="CreateAcc">
+            <h1 class="title">Create Account</h1>
+            <div class="errormessage errormessage--error"></div>
+            <div class="inputgroup">
+                <input type="text" class="incoming" autofocus placeholder="Email">
+                <div class="inError"></div>
+            </div> 
+            <div class="inputgroup">
+                <input type="password" class="incoming" autofocus placeholder="Password">
+                <div class="inError"></div>
+            </div>
+            <button class="loginbutton" type="submit">Continue</button>
+            <a id="linkuserlogin" class="newAcc">Already Have an Account? Sign In</a>
+        </form>
+    </div>
+    
+        <script src="main.js"></script>
+    </body>
+    </html>
