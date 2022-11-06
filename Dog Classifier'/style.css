@@ -23,17 +23,29 @@ nav {
 }
 
 .untubuntu{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
   text-decoration: none;
   color: white;
   background-color: black;
   list-style: none;
-  display: inline-block;
   margin-left: 2rem; 
   letter-spacing: 2px;
   width:fit-content; 
-  position: absolute;
-  left: 86.5%;
-  top: 1%;
+  
+}
+
+.btn-group button {
+  background-color: black; 
+  border: 1px solid black; 
+  color: white; 
+  cursor: pointer; 
+  display: inline-block;
+}
+
+
+.btn-group button:hover {
+  background-color: grey;
 }
 
 .mainheader{
@@ -45,6 +57,7 @@ nav {
 }
 
 .wrap{
+  position:absolute;
   background-color: white;
   width:100%;
 }
@@ -79,22 +92,18 @@ nav {
     width:500px;
     height:300px;
     background: white;
-    position:absolute;
+    position:fixed;
     top: 80%;
     left: 50%;
     transform:translate(-50%,-50%);
 }
 
-.button1{
+#rectangle .button1{
   font-size: 70%;
-  position:absolute;
-  top: 95.5%;
-  left: 60%;
+  justify-content: flex-end;
 }
 
-.button2{
+#rectangle .button2{
   font-size: 70%;
-  position:absolute;
-  top: 95.5%;
-  left: 53%;
+  justify-content: flex-end;
 }
