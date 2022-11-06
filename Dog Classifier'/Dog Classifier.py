@@ -1,193 +1,36 @@
 #start of dog classifier
 
 class Dog:
- def __init__(self, breed, gender, age, pregnant, activity):
-  self.breed = breed #str for breed size
+ def __init__(self, size, gender, age, pregnant, activity):
+  self.size = size #str for breed size
   self.age = age #str fo range
   self.gender= gender #male/female
-  self.pregnant = pregnant #if pregnant
   self.activity = activity #amount of physical activity
-  food_amount= ''
-  self.food_amount= food_amount
+  self.pregnant = 1 if pregnant == "Yes" else 0 #if pregnant
+  self.age_imp = 1 ###int
+  self.size_imp = 1 ###int
+  self.activity_imp = 1 ###int
+  self.pregnant_imp = 1 ###int
+
 
  def food(self):
-    match self.food_amount:
-        ####do shit
-        case None: return
-
-
-
- ####----####                          
- def activity_check(self):             
-  match self.activity:
-   case 'not-activity': return 
-   case 'medium-activity': return
-   case 'active': return
- ####----####                          
-
- def adult(self):
-  match 'breed':
-   case 'toy':
-            if self.activity == 'not-active':
-                return #food
-            if self.activity == 'medium-activity':
-                return #food
-            if self.activity == 'active':
-                return #food
-        if self.breed == 'small':
-            if self.activity == 'not-active':
-                return #food
-            if self.activity == 'medium-activity':
-                return #food
-            if self.activity == 'active':
-                return #food
-        if self.breed == 'medium':
-            if self.activity == 'not-active':
-                return #food
-            if self.activity == 'medium-activity':
-                return #food
-            if self.activity == 'active':
-                return #food
-        if self.breed == 'large':
-            if self.activity == 'not-active':
-                return #food
-            if self.activity == 'medium-activity':
-                return #food
-            if self.activity == 'active':
-                return #food
-
- def senior(self):
-    if self.age == 'senior' and self.gender== 'male':
-        if self.breed== 'toy':
-            if self.activity == 'not-active':
-                return #food
-            if self.activity == 'medium-activity':
-                return #food
-            if self.activity == 'active':
-                return #food
-        if self.breed == 'small':
-            if self.activity == 'not-active':
-                return #food
-            if self.activity == 'medium-activity':
-                return #food
-            if self.activity == 'active':
-                return #food
-        if self.breed == 'medium':
-            if self.activity == 'not-active':
-                return #food
-            if self.activity == 'medium-activity':
-                return #food
-            if self.activity == 'active':
-                return #food
-        if self.breed == 'large':
-            if self.activity == 'not-active':
-                return #food
-            if self.activity == 'medium-activity':
-                return #food
-            if self.activity == 'active':
-                return #food
-
-    elif self.age == 'senior' and self.gender== 'female':
-        if self.pregnant== 'pregnant':
-            if self.breed== 'toy':
-                if self.activity == 'not-active':
-                    return #food
-                if self.activity == 'medium-activity':
-                    return #food
-                if self.activity == 'active':
-                    return #food
-            if self.breed == 'small':
-                if self.activity == 'not-active':
-                    return #food
-                if self.activity == 'medium-activity':
-                    return #food
-                if self.activity == 'active':
-                    return #food
-            if self.breed == 'medium':
-                if self.activity == 'not-active':
-                    return #food
-                if self.activity == 'medium-activity':
-                    return #food
-                if self.activity == 'active':
-                    return #food
-            if self.breed == 'large':
-                if self.activity == 'not-active':
-                    return #food
-                if self.activity == 'medium-activity':
-                    return #food
-                if self.activity == 'active':
-                    return #food
-        if self.pregnant== 'not-pregnant':
-            if self.breed== 'toy':
-                if self.activity == 'not-active':
-                    return #food
-                if self.activity == 'medium-activity':
-                    return #food
-                if self.activity == 'active':
-                    return #food
-            if self.breed == 'small':
-                if self.activity == 'not-active':
-                    return #food
-                if self.activity == 'medium-activity':
-                    return #food
-                if self.activity == 'active':
-                    return #food
-            if self.breed == 'medium':
-                if self.activity == 'not-active':
-                    return #food
-                if self.activity == 'medium-activity':
-                    return #food
-                if self.activity == 'active':
-                    return #food
-            if self.breed == 'large':
-                if self.activity == 'not-active':
-                    return #food
-                if self.activity == 'medium-activity':
-                    return #food
-                if self.activity == 'active':
-                    return #food
-                
- def food(self):
-  match self.age:
-   case 'puppy': 
-    self.puppies() 
-   case 'adult':
-    self.adult()
-   case 'senior':
-    self.senior()
+  self.age_imp * self.age_c() + self.size_imp * self.size_c() + self.activity_imp * self.activity_c() + self.pregnant_imp * self.pregnant
  
+ def age_c(self):
+  match self.age:
+   case 'puppy': return ###int
+   case 'adult': return ###int
+   case 'senior': return ##int
+ 
+ def size_c(self):
+  match self.size:
+   case 'toy': return ###int
+   case 'small': return ###int
+   case 'medium': return ##int
+   case 'large': return ##int
 
- def puppies(self):
-  match self.breed:
-   case 'toy':
-    match self.activity:
-     case 'not-activity':
-      return #food
-     case 'medium-activity':
-      return #food
-     case 'active':
-      return #food
-   case 'small':
-    match self.activity:
-     case 'not-activity':
-      return #food
-     case 'medium-activity':
-      return #food
-     case 'active':
-      return #food
-   case 'medium':
-    match self.activity:
-     case 'not-activity':
-      return #food
-     case 'medium-activity':
-      return #food
-     case 'active':
-      return #food
-   case 'large':
-    match self.activity:
-     case 'not-activity':
-      return #food
-     case 'medium-activity':
-      return #food
-     case 'active':
-      return #food
+ def activity_c(self):
+  match self.activity:
+   case 'low': return ###int
+   case 'medium': return ###int
+   case 'active': return ##int
