@@ -23,23 +23,30 @@ nav {
 }
 
 .untubuntu{
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    text-transform: uppercase;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif; 
-    list-style: none;
-    display: inline-block;
-    margin-left: 2rem; 
-    letter-spacing: 2px;
-    width:fit-content;
-    height: auto; 
-     
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  list-style: none;
+  display: inline-block;
+  margin-left: 2rem; 
+  letter-spacing: 2px;
+  width:fit-content; 
+  position: absolute;
+  left: 86.5%;
+  top: 1%;
+}
+
+.mainheader{
+  font-size: 55pt;
+  text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif; 
+  margin-left: 2rem;
+  margin-top: -1rem;
 }
 
 .wrap{
-    background-color: white;
+  background-color: white;
+  width:100%;
 }
 
 .header2 {
@@ -78,8 +85,16 @@ nav {
     transform:translate(-50%,-50%);
 }
 
-#buttonn{
-    left: 10px;
-    position:absolute;
-    transform:translateX(10);
+.button1{
+  font-size: 70%;
+  position:absolute;
+  top: 95.5%;
+  left: 60%;
+}
+
+.button2{
+  font-size: 70%;
+  position:absolute;
+  top: 95.5%;
+  left: 53%;
 }
