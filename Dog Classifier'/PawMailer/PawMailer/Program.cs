@@ -32,9 +32,9 @@ namespace PawMailer
        client.EnableSsl = true;
        client.DeliveryMethod = SmtpDeliveryMethod.Network;
        client.UseDefaultCredentials = false;
-       client.Credentials = new System.Net.NetworkCredential("ohm.flare.007@gmail.com", "uqnedllaldckdlmf");
+       client.Credentials = new System.Net.NetworkCredential("pawggersmail@gmail.com", "yextprwaisnzuqpt");
        MailMessage mm = new MailMessage();
-       mm.From = new MailAddress("ohm.flare.007@gmail.com");
+       mm.From = new MailAddress("pawggersmail@gmail.com");
        mm.Subject = "FEED YOUR DOG YOU FUCK";
        mm.Body = body_text;
        mm.To.Add(kvp.Key);
