@@ -33,7 +33,7 @@ namespace PawMailer
        client.Credentials = new System.Net.NetworkCredential("pawggersmail@gmail.com", "yextprwaisnzuqpt");
        MailMessage mm = new MailMessage();
        mm.From = new MailAddress("pawggersmail@gmail.com");
-       mm.Subject = "FEED YOUR DOG YOU FUCK";
+       mm.Subject = "It's time to feed your best friend! : )";
        mm.Body = body_text;
        mm.To.Add(kvp.Key);
        if (last_sent != time){
@@ -46,4 +46,3 @@ namespace PawMailer
   }
  }
 }
-
